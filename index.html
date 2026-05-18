@@ -519,16 +519,25 @@
   /* ===== FOOTER ===== */
   footer{border-top:1px solid var(--line);padding:50px 0 40px}
   .foot-inner{
-    display:flex;align-items:center;justify-content:space-between;
-    gap:30px;flex-wrap:wrap;
+    display:grid;grid-template-columns:1.4fr 1fr 1.3fr;
+    align-items:flex-start;gap:40px;
   }
-  .foot-tag{color:var(--text-3);font-size:13px;margin-top:8px}
-  .foot-links{display:flex;gap:34px;color:var(--text-3);font-size:14px}
+  .foot-tag{color:var(--text-3);font-size:13px;margin-top:10px;line-height:1.7}
+  .foot-links{display:flex;flex-direction:column;gap:12px;color:var(--text-3);font-size:14px;padding-top:18px}
   .foot-links a{transition:color .2s}
   .foot-links a:hover{color:var(--cyan-300)}
+  .foot-contact{display:flex;flex-direction:column;gap:8px;padding-top:18px}
+  .foot-contact h4{
+    font-size:11px;letter-spacing:2px;text-transform:uppercase;
+    color:rgba(255,255,255,0.55);font-weight:600;margin-bottom:8px;
+  }
+  .foot-contact > div{font-size:14px;color:rgba(255,255,255,0.75);line-height:1.6}
+  .foot-contact .region{color:var(--cyan-300);font-weight:600;font-size:12px;letter-spacing:0.5px;margin-right:4px}
+  .foot-contact a{color:inherit;transition:color .2s}
+  .foot-contact a:hover{color:var(--cyan-300)}
   .foot-bottom{
     border-top:1px solid var(--line);margin-top:36px;padding-top:24px;
-    display:flex;justify-content:space-between;font-size:12px;color:var(--text-4);flex-wrap:wrap;gap:10px;
+    display:flex;justify-content:space-between;font-size:12px;color:var(--text-4);flex-wrap:wrap;gap:10px;line-height:1.7;
   }
 
   /* ===== ANIMATIONS ===== */
@@ -659,9 +668,12 @@
     .global p{font-size:16px;line-height:1.75}
 
     /* Footer */
+    .foot-inner{grid-template-columns:1fr;gap:32px}
     .foot-tag{font-size:14px;line-height:1.75}
-    .foot-col h4{font-size:12px}
-    .foot-col a{font-size:14px}
+    .foot-links{padding-top:0;font-size:15px}
+    .foot-contact{padding-top:0}
+    .foot-contact h4{font-size:12px}
+    .foot-contact > div{font-size:15px}
     .foot-bottom{font-size:13px;line-height:1.6}
   }
 </style>
@@ -1104,10 +1116,16 @@
         <a href="#pipeline" data-i18n="nav_pipeline">Pipeline</a>
         <a href="#partners" data-i18n="nav_contact">Contact</a>
       </div>
+      <div class="foot-contact">
+        <h4 data-i18n="foot_contact_label">CONTACT</h4>
+        <div><span class="region">(KOR)</span> <a href="tel:+821050909082">+82-10-5090-9082</a></div>
+        <div><span class="region">(US)</span> <a href="tel:+13174958832">+1-317-495-8832</a></div>
+        <div><a href="mailto:bgdocc@gmail.com">bgdocc@gmail.com</a></div>
+      </div>
     </div>
     <div class="foot-bottom">
-      <div>© 2026 Tailored Bio Co., Ltd. · <span data-i18n="foot_address_full">경기도 성남시 수정구 금토로 80번길 56, 219호 (위든타워), 13453</span></div>
-      <div>bgdocc@gmail.com · <span data-i18n="foot_location">Pangyo, Korea</span></div>
+      <div>© 2026 Tailored Bio Co., Ltd. · <span data-i18n="foot_ceo">대표이사 배기덕</span> · <span data-i18n="foot_biz_no">사업자등록번호 812-81-04145</span></div>
+      <div><span data-i18n="foot_address_full">경기도 성남시 수정구 금토로 80번길 56, 219호 (위든타워), 13453</span> · <span data-i18n="foot_location">판교, 대한민국</span></div>
     </div>
   </div>
 </footer>
@@ -1175,7 +1193,10 @@ const I18N = {
     glo_cta:"파트너 되기",
     foot_tag:"Designing the future of the pet microbiome",
     foot_address_full:"경기도 성남시 수정구 금토로 80번길 56, 219호 (위든타워), 13453",
-    foot_location:"판교, 대한민국"
+    foot_location:"판교, 대한민국",
+    foot_contact_label:"CONTACT",
+    foot_ceo:"대표이사 배기덕",
+    foot_biz_no:"사업자등록번호 812-81-04145"
   },
 
   en: {
@@ -1238,7 +1259,10 @@ const I18N = {
     glo_cta:"Become a partner",
     foot_tag:"Designing the future of the pet microbiome",
     foot_address_full:"219 Weeden Tower, 56 Geumto-ro 80beon-gil, Sujeong-gu, Seongnam-si, Gyeonggi-do 13453, Korea",
-    foot_location:"Pangyo, Korea"
+    foot_location:"Pangyo, Korea",
+    foot_contact_label:"CONTACT",
+    foot_ceo:"CEO Gi Duk Bae",
+    foot_biz_no:"Business Reg. No. 812-81-04145"
   },
 
   zh: {
@@ -1301,7 +1325,10 @@ const I18N = {
     glo_cta:"成为合作伙伴",
     foot_tag:"为宠物微生物组的未来而设计",
     foot_address_full:"韩国京畿道城南市寿井区琴吐路80街56号 219室 (위든타워), 邮编 13453",
-    foot_location:"板桥, 韩国"
+    foot_location:"板桥, 韩国",
+    foot_contact_label:"联系方式",
+    foot_ceo:"首席执行官 배기덕",
+    foot_biz_no:"营业执照号 812-81-04145"
   }
 };
 
