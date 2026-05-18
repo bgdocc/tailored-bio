@@ -54,12 +54,11 @@
   }
 
   /* ===== CI LOGO ===== */
-  .ci-logo{display:block;height:42px;width:auto;color:#fff}
+  .ci-logo{display:block;height:64px;width:auto;color:#fff;filter:drop-shadow(0 0 10px rgba(103,232,249,0.35))}
   .ci-logo .word,.ci-logo .sub{font-family:'Playfair Display',serif;fill:currentColor}
-  .ci-logo .word{font-weight:700}
-  .ci-logo .sub{font-weight:500;letter-spacing:14px}
-  .ci-logo .bowtie{fill:var(--cyan-300)}
-  .ci-logo.lg{height:72px}
+  .ci-logo .word{font-weight:800}
+  .ci-logo .sub{font-weight:600;letter-spacing:14px}
+  .ci-logo.lg{height:104px;filter:drop-shadow(0 0 16px rgba(103,232,249,0.30))}
 
   /* ===== BUTTONS ===== */
   .btn{
@@ -232,17 +231,17 @@
     display:flex;align-items:center;justify-content:center;
     font-size:28px;margin-bottom:24px;
   }
-  .glass-card h3{font-size:22px;font-weight:600;margin-bottom:14px}
-  .glass-card p{font-size:14px;line-height:1.75;color:var(--text-3)}
+  .glass-card h3{font-size:24px;font-weight:600;margin-bottom:14px}
+  .glass-card p{font-size:16px;line-height:1.75;color:var(--text-3)}
   .glass-card .strain-tag{
     display:inline-flex;align-items:center;gap:6px;
-    margin-top:20px;padding:7px 14px;
-    font-family:'Inter',monospace;font-size:12px;font-weight:600;letter-spacing:0.5px;
+    margin-top:20px;padding:8px 16px;
+    font-family:'Inter',monospace;font-size:13px;font-weight:600;letter-spacing:0.5px;
     color:#04121E;background:linear-gradient(135deg,#67E8F9,#22D3EE);
     border-radius:999px;
   }
   .glass-card .strain-tag .label{
-    font-size:10px;font-weight:500;letter-spacing:1.2px;
+    font-size:11px;font-weight:500;letter-spacing:1.2px;
     color:rgba(4,18,30,0.65);text-transform:uppercase;
   }
 
@@ -260,16 +259,16 @@
   .bp-desc{margin-top:32px;font-size:17px;line-height:1.8;color:var(--text-2);max-width:520px}
   .bp-tags{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:40px;max-width:520px}
   .bp-tag{
-    padding:18px 22px;border-radius:18px;
+    padding:20px 24px;border-radius:18px;
     background:rgba(34,211,238,0.08);
     border:1px solid rgba(103,232,249,0.18);
-    font-size:14px;font-weight:500;color:var(--text);
-    display:flex;align-items:center;gap:10px;
+    font-size:16px;font-weight:500;color:var(--text);
+    display:flex;align-items:center;gap:12px;
     transition:all .25s;
   }
   .bp-tag:hover{background:rgba(34,211,238,0.14);border-color:rgba(103,232,249,0.40)}
-  .bp-tag i{color:var(--cyan-300);font-size:18px}
-  .bp-tag svg{color:var(--cyan-300);width:22px;height:auto;flex-shrink:0}
+  .bp-tag i{color:var(--cyan-300);font-size:20px}
+  .bp-tag svg{color:var(--cyan-300);width:24px;height:auto;flex-shrink:0}
 
   .bp-card-wrap{position:relative}
   .bp-card-wrap::before{
@@ -285,10 +284,10 @@
   .bp-row{margin-bottom:32px}
   .bp-row:last-child{margin-bottom:0}
   .bp-row .label{
-    font-size:12px;letter-spacing:1.5px;text-transform:uppercase;
+    font-size:13px;letter-spacing:1.5px;text-transform:uppercase;
     color:var(--text-3);margin-bottom:8px;font-weight:500;
   }
-  .bp-row .value{font-size:22px;font-weight:600;color:#fff;letter-spacing:-0.01em}
+  .bp-row .value{font-size:24px;font-weight:600;color:#fff;letter-spacing:-0.01em}
 
   /* ===== PETS BANNER ===== */
   .pets-banner{
@@ -330,13 +329,13 @@
     border-top:1px solid rgba(255,255,255,0.16);max-width:440px;
   }
   .pets-banner .stat-strip .item .num{
-    font-size:26px;font-weight:700;letter-spacing:-0.02em;line-height:1;
+    font-size:28px;font-weight:700;letter-spacing:-0.02em;line-height:1;
     background:linear-gradient(135deg,#67E8F9,#22D3EE);
     -webkit-background-clip:text;background-clip:text;color:transparent;
   }
   .pets-banner .stat-strip .item .lbl{
-    font-size:10.5px;color:rgba(255,255,255,0.55);
-    letter-spacing:1.2px;text-transform:uppercase;margin-top:6px;
+    font-size:12px;color:rgba(255,255,255,0.55);
+    letter-spacing:1.2px;text-transform:uppercase;margin-top:8px;
   }
 
   /* ===== BP121 STATS BAR ===== */
@@ -355,7 +354,7 @@
     -webkit-background-clip:text;background-clip:text;color:transparent;
     margin-bottom:8px;
   }
-  .bp-stats .lbl{font-size:12px;color:var(--text-3);letter-spacing:0.5px;line-height:1.4}
+  .bp-stats .lbl{font-size:13px;color:var(--text-3);letter-spacing:0.5px;line-height:1.5}
 
   /* ===== BP121 MECHANISM ===== */
   .mech-head{margin:80px 0 40px;text-align:center}
@@ -385,9 +384,9 @@
     font-size:32px;margin:14px auto 18px;
     box-shadow:0 0 30px rgba(34,211,238,0.15) inset;
   }
-  .mech-step h4{font-size:16px;font-weight:600;color:#fff;margin-bottom:8px;letter-spacing:-0.01em}
-  .mech-step .sub{font-size:13px;color:var(--cyan-200);font-weight:500;margin-bottom:12px}
-  .mech-step p{font-size:12px;color:var(--text-3);line-height:1.7}
+  .mech-step h4{font-size:18px;font-weight:600;color:#fff;margin-bottom:8px;letter-spacing:-0.01em}
+  .mech-step .sub{font-size:14px;color:var(--cyan-200);font-weight:500;margin-bottom:12px}
+  .mech-step p{font-size:14px;color:var(--text-3);line-height:1.75}
   .mech-arrow{
     align-self:center;color:var(--cyan-300);font-size:24px;padding:0 8px;
     opacity:0.7;
@@ -436,8 +435,8 @@
     display:flex;align-items:center;justify-content:center;
     font-family:'Inter',monospace;font-size:14px;font-weight:700;letter-spacing:0.5px;
   }
-  .rd-stage h4{font-size:16px;font-weight:600;color:#fff;margin-bottom:4px}
-  .rd-stage p{font-size:12px;color:var(--text-3);line-height:1.65}
+  .rd-stage h4{font-size:18px;font-weight:600;color:#fff;margin-bottom:6px}
+  .rd-stage p{font-size:14px;color:var(--text-3);line-height:1.75}
 
   /* ===== EFFICACY CHART ===== */
   .efficacy{
@@ -458,46 +457,46 @@
 
   .eff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
   .eff-item{}
-  .eff-item .marker{font-size:13px;color:var(--text-2);margin-bottom:4px;font-weight:500}
-  .eff-item .sub{font-size:10px;color:var(--text-3);letter-spacing:1px;margin-bottom:18px;text-transform:uppercase}
+  .eff-item .marker{font-size:15px;color:var(--text-2);margin-bottom:6px;font-weight:500}
+  .eff-item .sub{font-size:12px;color:var(--text-3);letter-spacing:1px;margin-bottom:18px;text-transform:uppercase}
   .eff-bars{position:relative;height:140px;display:flex;align-items:flex-end;gap:12px;border-bottom:1px solid var(--line);padding-bottom:0}
   .eff-bar{flex:1;border-radius:8px 8px 0 0;position:relative;transition:height .8s ease}
   .eff-bar.untreated{background:rgba(255,255,255,0.14)}
   .eff-bar.bp121{background:linear-gradient(180deg,#67E8F9,#22D3EE);box-shadow:0 0 22px rgba(34,211,238,0.30)}
   .eff-bar .val{
-    position:absolute;top:-20px;left:50%;transform:translateX(-50%);
-    font-size:11px;font-weight:700;color:#fff;font-family:'Inter',monospace;letter-spacing:-0.02em;
+    position:absolute;top:-22px;left:50%;transform:translateX(-50%);
+    font-size:13px;font-weight:700;color:#fff;font-family:'Inter',monospace;letter-spacing:-0.02em;
   }
   .eff-bar.untreated .val{color:var(--text-3)}
   .eff-reduce{
-    margin-top:14px;font-size:11px;color:var(--cyan-300);font-weight:600;letter-spacing:0.5px;
-    display:flex;align-items:center;gap:5px;
+    margin-top:14px;font-size:13px;color:var(--cyan-300);font-weight:600;letter-spacing:0.5px;
+    display:flex;align-items:center;gap:6px;
   }
-  .eff-reduce i{font-size:14px}
-  .eff-note{margin-top:24px;font-size:11px;color:var(--text-4);letter-spacing:0.3px}
+  .eff-reduce i{font-size:16px}
+  .eff-note{margin-top:24px;font-size:12px;color:var(--text-4);letter-spacing:0.3px;line-height:1.6}
 
   /* ===== SAFETY GRID ===== */
   .safety{margin-top:80px}
   .safety-head{margin-bottom:32px;text-align:center}
   .safety-head .eyebrow{display:block;margin-bottom:10px}
   .safety-head h3{font-size:24px;font-weight:600;color:#fff}
-  .safety-head p{font-size:14px;color:var(--text-3);margin-top:8px}
+  .safety-head p{font-size:15px;color:var(--text-3);margin-top:8px}
   .safety-grid{
     display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
   }
   .safety-item{
     background:var(--card);border:1px solid var(--line);border-radius:14px;
-    padding:18px 16px 18px 18px;
-    display:flex;align-items:center;gap:12px;
-    font-size:13px;color:var(--text-2);font-weight:500;
+    padding:20px 18px 20px 20px;
+    display:flex;align-items:center;gap:14px;
+    font-size:15px;color:var(--text-2);font-weight:500;
     transition:all .2s;
   }
   .safety-item:hover{border-color:rgba(103,232,249,0.30)}
   .safety-item .check{
-    width:24px;height:24px;border-radius:50%;flex-shrink:0;
+    width:26px;height:26px;border-radius:50%;flex-shrink:0;
     background:linear-gradient(135deg,#22D3EE,#67E8F9);
     color:#04121E;display:flex;align-items:center;justify-content:center;
-    font-size:14px;font-weight:700;
+    font-size:15px;font-weight:700;
   }
 
   /* ===== GLOBAL CTA ===== */
@@ -575,10 +574,95 @@
     .pets-banner .stat-strip{gap:24px}
     .pets-banner .stat-strip .item .num{font-size:22px}
     .nav-menu{display:none}
+    .ci-logo{height:48px}
+    .ci-logo.lg{height:84px}
     section{padding:90px 0}
     .global{padding:100px 0}
     h1{font-size:42px}
-    h2{font-size:32px}
+    h2{font-size:30px}
+    h3{font-size:22px}
+
+    /* ===== 모바일 폰트 가독성 ===== */
+    body{font-size:16px}
+    p{font-size:16px;line-height:1.75}
+    .eyebrow{font-size:12px;letter-spacing:2.5px}
+
+    /* Hero */
+    .hero-pill{font-size:13px;padding:9px 17px;letter-spacing:1.5px}
+    .hero-sub{font-size:16px;line-height:1.75}
+
+    /* Stats / Metric labels */
+    .stat{padding:30px 24px}
+    .stat .num{font-size:38px}
+    .stat .lbl{font-size:13px;line-height:1.5}
+
+    /* Science / Pipeline glass cards */
+    .glass-card{padding:32px 26px}
+    .glass-card h3{font-size:21px}
+    .glass-card p{font-size:15px;line-height:1.75}
+    .glass-card .strain-tag{font-size:13px;padding:8px 16px;margin-top:18px}
+    .glass-card .strain-tag .label{font-size:11px}
+
+    /* Pets banner */
+    .pets-banner-text{max-width:none}
+    .pets-banner p{font-size:15px;line-height:1.75}
+    .pets-banner .stat-strip{gap:24px;max-width:none}
+    .pets-banner .stat-strip .item .lbl{font-size:12px;letter-spacing:0.5px;line-height:1.5}
+
+    /* BP121 main card */
+    .bp-subtitle{font-size:22px}
+    .bp-desc{font-size:16px;line-height:1.8;margin-top:28px}
+    .bp-tag{font-size:15px;padding:16px 20px}
+    .bp-tag i{font-size:18px}
+    .bp-tag svg{width:24px}
+    .bp-row .label{font-size:12px}
+    .bp-row .value{font-size:20px}
+
+    /* BP121 stats */
+    .bp-stats .num{font-size:36px}
+    .bp-stats .lbl{font-size:13px;line-height:1.5}
+
+    /* Mechanism cards */
+    .mech-head h3{font-size:26px}
+    .mech-head p{font-size:15px}
+    .mech-step{padding:32px 26px}
+    .mech-step h4{font-size:18px}
+    .mech-step .sub{font-size:14px}
+    .mech-step p{font-size:14px;line-height:1.7}
+
+    /* Lab photo overlay */
+    .lab-photo .lab-overlay .label{font-size:11px}
+    .lab-photo .lab-overlay h4{font-size:19px}
+
+    /* R&D stages */
+    .rd-stage{padding:22px 22px}
+    .rd-stage .num{font-size:14px}
+    .rd-stage h4{font-size:17px}
+    .rd-stage p{font-size:14px;line-height:1.7}
+
+    /* Efficacy chart */
+    .efficacy-head h3{font-size:22px}
+    .efficacy-head .legend{font-size:11px;gap:14px}
+    .eff-item .marker{font-size:14px}
+    .eff-item .sub{font-size:11px;letter-spacing:0.5px}
+    .eff-bar .val{font-size:12px}
+    .eff-reduce{font-size:12px}
+    .eff-note{font-size:12px;line-height:1.6}
+
+    /* Safety grid */
+    .safety-head h3{font-size:22px}
+    .safety-head p{font-size:15px}
+    .safety-item{font-size:14px;padding:18px;gap:12px}
+    .safety-item .check{width:26px;height:26px;font-size:15px}
+
+    /* Global CTA */
+    .global p{font-size:16px;line-height:1.75}
+
+    /* Footer */
+    .foot-tag{font-size:14px;line-height:1.75}
+    .foot-col h4{font-size:12px}
+    .foot-col a{font-size:14px}
+    .foot-bottom{font-size:13px;line-height:1.6}
   }
 </style>
 </head>
@@ -589,10 +673,8 @@
   <div class="nav-inner">
     <a href="#" class="logo" aria-label="Tailored Bio">
       <svg class="ci-logo" viewBox="0 0 360 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tailored Bio">
-        <polygon class="bowtie" points="0,28 0,108 180,68"/>
-        <polygon class="bowtie" points="360,28 360,108 180,68"/>
         <text class="word" x="180" y="98" text-anchor="middle" font-size="78">Tailored</text>
-        <text class="sub" x="186" y="142" text-anchor="middle" font-size="20">B I O</text>
+        <text class="sub" x="186" y="146" text-anchor="middle" font-size="30">B I O</text>
       </svg>
     </a>
     <div class="nav-menu">
@@ -854,9 +936,8 @@
     <!-- R&D PROCESS + LAB PHOTO -->
     <div class="rd-block reveal">
       <div class="lab-photo">
-        <img src="assets/lab.jpg" alt="Tailored Bio research lab" loading="lazy"/>
+        <img src="assets/lab.jpg" alt="Research lab" loading="lazy"/>
         <div class="lab-overlay">
-          <div class="label" data-i18n="lab_label">OUR LAB</div>
           <h4 data-i18n="lab_title">의약품 개발 수준의 효능 검증.</h4>
         </div>
       </div>
@@ -1012,10 +1093,8 @@
     <div class="foot-inner">
       <div>
         <svg class="ci-logo lg" viewBox="0 0 360 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tailored Bio">
-          <polygon class="bowtie" points="0,28 0,108 180,68"/>
-          <polygon class="bowtie" points="360,28 360,108 180,68"/>
           <text class="word" x="180" y="98" text-anchor="middle" font-size="78">Tailored</text>
-          <text class="sub" x="186" y="142" text-anchor="middle" font-size="20">B I O</text>
+          <text class="sub" x="186" y="146" text-anchor="middle" font-size="30">B I O</text>
         </svg>
         <p class="foot-tag" data-i18n="foot_tag">Designing the future of the pet microbiome</p>
       </div>
@@ -1071,7 +1150,7 @@ const I18N = {
     mech1_t:"1차 방어", mech1_s:"요독 물질 생성 저해", mech1_d:"장내 유해균을 직접 억제해 요독 물질이 만들어지는 단계를 차단합니다.",
     mech2_t:"2차 제거", mech2_s:"Indoxyl sulfate 제거", mech2_d:"이미 생성된 요독 물질(인독실황산)을 체내에서 제거합니다. 특허 균주 능력.",
     mech3_t:"3차 배출", mech3_s:"체내 인(P) 배출", mech3_d:"고인산혈증을 예방해 신장 부담을 줄이고 삶의 질을 개선합니다.",
-    lab_label:"OUR LAB", lab_title:"의약품 개발 수준의 효능 검증.",
+    lab_title:"의약품 개발 수준의 효능 검증.",
     rd1_t:"기능성 균주 발굴 및 동정", rd1_d:"자연 유래 · Non-GMO · 유전적·생리화학적 검증을 거친 활용 가능한 균종.",
     rd2_t:"안전성 평가", rd2_d:"의약품 수준 안전성 확보 · 유전적 독성 유전자 없음 · 제3 전문기관 검증.",
     rd3_t:"기능성 검증 (in vitro)", rd3_d:"신기능 지표 효능 확인 · 요독 분해 기능성 확인 · 한국·미국·중국 특허 등록.",
@@ -1134,7 +1213,7 @@ const I18N = {
     mech1_t:"Stage 1 · Defense", mech1_s:"Inhibits toxin generation", mech1_d:"Directly suppresses harmful gut bacteria to block the production of uremic toxins at the source.",
     mech2_t:"Stage 2 · Removal", mech2_s:"Removes Indoxyl sulfate", mech2_d:"Removes already-generated uremic toxins (indoxyl sulfate) from the body. A patented strain capability.",
     mech3_t:"Stage 3 · Excretion", mech3_s:"Phosphorus excretion", mech3_d:"Prevents hyperphosphatemia, easing the kidney burden and improving quality of life.",
-    lab_label:"OUR LAB", lab_title:"Pharmaceutical-grade efficacy validation.",
+    lab_title:"Pharmaceutical-grade efficacy validation.",
     rd1_t:"Strain discovery & identification", rd1_d:"Naturally derived · Non-GMO · genetically and biochemically validated, usable strain types.",
     rd2_t:"Safety evaluation", rd2_d:"Pharmaceutical-level safety · no genetic toxicity genes · third-party verification.",
     rd3_t:"Functional verification (in vitro)", rd3_d:"Renal indicator efficacy · uremic toxin degradation · patents in KR, US, CN.",
@@ -1196,7 +1275,7 @@ const I18N = {
     mech1_t:"一阶 · 防御", mech1_s:"抑制尿毒素生成", mech1_d:"直接抑制肠道有害菌,从源头阻断尿毒素的生成。",
     mech2_t:"二阶 · 清除", mech2_s:"清除吲哚酚硫酸", mech2_d:"清除体内已生成的尿毒素(吲哚酚硫酸)。专利菌株能力。",
     mech3_t:"三阶 · 排出", mech3_s:"体内磷排出", mech3_d:"预防高磷血症,减轻肾脏负担,提升生活质量。",
-    lab_label:"OUR LAB", lab_title:"达到药品研发水平的功效验证。",
+    lab_title:"达到药品研发水平的功效验证。",
     rd1_t:"功能性菌株发现与鉴定", rd1_d:"天然来源 · 非转基因 · 经过遗传与生理生化验证、可用菌种。",
     rd2_t:"安全性评估", rd2_d:"达到药品级安全性 · 无遗传毒性基因 · 第三方专业机构验证。",
     rd3_t:"功能性验证(体外)", rd3_d:"肾功能指标确认 · 尿毒素分解功能 · 韩、美、中专利登记。",
