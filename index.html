@@ -214,6 +214,66 @@
 
   .bg-alt{background:var(--bg-1)}
 
+  /* ===== LIGHT TONE SECTION ===== */
+  .bg-light{background:#F4F7FA;color:#0A1F18}
+  .bg-light h2,.bg-light h3,.bg-light h4{color:#0A1F18}
+  .bg-light p{color:#3A524A}
+  .bg-light .eyebrow{color:#0F6E56;font-weight:700}
+  .bg-light .glass-card{
+    background:#FFFFFF;
+    border:1px solid rgba(10,31,24,0.08);
+    box-shadow:0 1px 2px rgba(10,31,24,0.04);
+  }
+  .bg-light .glass-card:hover{
+    border-color:rgba(15,110,86,0.35);
+    background:#FFFFFF;
+    box-shadow:0 18px 40px -20px rgba(15,110,86,0.18);
+  }
+  .bg-light .glass-card h3{color:#0A1F18}
+  .bg-light .glass-card p{color:#3A524A}
+  .bg-light .glass-card .ico{
+    background:rgba(15,110,86,0.10);color:#0F6E56;
+    box-shadow:0 0 0 0 transparent;
+  }
+  .bg-light .glass-card .strain-tag{
+    background:linear-gradient(135deg,#0F6E56,#1D9E75);
+    color:#FFFFFF;
+  }
+  .bg-light .glass-card .strain-tag .label{
+    color:rgba(255,255,255,0.75);
+  }
+  /* Light tone color variations for Science cards */
+  .bg-light .glass-card.tone-mint{
+    border-top:3px solid #0F6E56;
+  }
+  .bg-light .glass-card.tone-mint .ico{
+    background:rgba(15,110,86,0.10);color:#0F6E56;
+  }
+  .bg-light .glass-card.tone-mint:hover{
+    border-color:rgba(15,110,86,0.45);
+    box-shadow:0 18px 40px -20px rgba(15,110,86,0.25);
+  }
+  .bg-light .glass-card.tone-sky{
+    border-top:3px solid #0284C7;
+  }
+  .bg-light .glass-card.tone-sky .ico{
+    background:rgba(2,132,199,0.10);color:#0284C7;
+  }
+  .bg-light .glass-card.tone-sky:hover{
+    border-color:rgba(2,132,199,0.45);
+    box-shadow:0 18px 40px -20px rgba(2,132,199,0.25);
+  }
+  .bg-light .glass-card.tone-indigo{
+    border-top:3px solid #4338CA;
+  }
+  .bg-light .glass-card.tone-indigo .ico{
+    background:rgba(67,56,202,0.10);color:#4338CA;
+  }
+  .bg-light .glass-card.tone-indigo:hover{
+    border-color:rgba(67,56,202,0.45);
+    box-shadow:0 18px 40px -20px rgba(67,56,202,0.25);
+  }
+
   /* ===== SCIENCE / PIPELINE CARDS ===== */
   .card-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
   .card-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
@@ -800,24 +860,24 @@
 </header>
 
 <!-- ============ SCIENCE ============ -->
-<section class="bg-alt" id="science">
+<section class="bg-light" id="science">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow" data-i18n="sci_eyebrow">OUR SCIENCE</span>
       <h2 data-i18n="sci_title">정밀 마이크로바이옴 테크놀로지.</h2>
     </div>
     <div class="card-grid-3">
-      <div class="glass-card reveal">
+      <div class="glass-card tone-mint reveal">
         <div class="ico"><i class="ti ti-dna-2"></i></div>
         <h3 data-i18n="sci1_t">기능성 균주</h3>
         <p data-i18n="sci1_d">반려동물 건강을 위해 과학적으로 선별된 기능성 마이크로바이옴 균주.</p>
       </div>
-      <div class="glass-card reveal">
+      <div class="glass-card tone-sky reveal">
         <div class="ico"><i class="ti ti-microscope"></i></div>
         <h3 data-i18n="sci2_t">마이크로바이옴 연구</h3>
         <p data-i18n="sci2_d">표적 적응증을 위한 고도화된 마이크로바이옴 분석 및 검증 플랫폼.</p>
       </div>
-      <div class="glass-card reveal">
+      <div class="glass-card tone-indigo reveal">
         <div class="ico"><i class="ti ti-shield-check"></i></div>
         <h3 data-i18n="sci3_t">임상 응용</h3>
         <p data-i18n="sci3_d">신장, 면역, 장 건강, 스트레스, 대사 영역으로 확장되는 적응증.</p>
@@ -1061,7 +1121,7 @@
 </section>
 
 <!-- ============ PIPELINE ============ -->
-<section class="bg-alt" id="pipeline">
+<section class="bg-light" id="pipeline">
   <div class="container">
     <div class="section-head center reveal">
       <span class="eyebrow" data-i18n="pipe_eyebrow">PIPELINE</span>
